@@ -12,40 +12,6 @@
     />
     <link href="./style.css" rel="stylesheet" />
     <title>Document</title>
-    <!-- Custom CSS-->
-    <style>
-      :root {
-        --blue: #436af5;
-        --indigo: #6610f2;
-        --purple: #6f42c1;
-        --pink: #e83e8c;
-        --red: #dc3545;
-        --orange: #fd7e14;
-        --yellow: #ffc107;
-        --green: #28a745;
-        --teal: #20c997;
-        --cyan: #17a2b8;
-        --white: #fff;
-        --gray: #9a9a9a;
-        --gray-dark: #343a40;
-        --primary: #3f52ff;
-        --secondary: #bec9d3;
-        --success: #28a745;
-        --info: #17a2b8;
-        --warning: #ffc107;
-        --danger: #dc3545;
-        --light: #f8f9fa;
-        --dark: #343a40;
-        --breakpoint-xs: 0;
-        --breakpoint-sm: 576px;
-        --breakpoint-md: 768px;
-        --breakpoint-lg: 992px;
-        --breakpoint-xl: 1200px;
-        --font-family-sans-serif: "Poppins", sans-serif;
-        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", "Courier New", monospace;
-      }
-    </style>
   </head>
   <body>
     <!-- navbar starts -->
@@ -126,14 +92,27 @@
         </h6>
       </div>
 
-      <div class="cards d-flex justify-content-between">
+      <!-- cards area starts -->
+      <div class="cards d-flex justify-content-between flex-wrap">
         <div class="card mt-4 rounded-3 p-4 border-0">
-          <div class="d-flex gap-3 align-items-center">
+          <div class="card-heading d-flex gap-4 align-items-center">
             <img src="./assets//nova.svg" alt="nova" />
             <h6 class="text-primary">Nova Agritech Ltd.</h6>
           </div>
 
-          <div class="mt-5 d-flex gap-5">
+          <div class="mt-5 d-flex justify-content-between gap-3 flex-wrap px-1">
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
+              <h4 class="fs-xs">Rs 39 - 41</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
+              <h4 class="fs-xs">2024-01-22</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
+              <h4 class="fs-xs">2024-01-24</h4>
+            </div>
             <div class="flex">
               <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
               <h4 class="fs-xs">Rs 39 - 41</h4>
@@ -148,87 +127,38 @@
             </div>
           </div>
 
-          <div class="my-4 d-flex gap-5">
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
-              <h4 class="fs-xs">Rs 39 - 41</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
-              <h4 class="fs-xs">2024-01-22</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
-              <h4 class="fs-xs">2024-01-24</h4>
-            </div>
-          </div>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2 mt-3">
             <button
-              class="btn btn-transparent rounded-3 px-4 border border-primary text-primary"
+              class="btn btn-transparent rounded-4 px-4 border border-primary text-primary"
               type="submit"
             >
               RHP
             </button>
-            <button class="btn bg-red text-white rounded-3 px-4" type="submit">
-              DHRP
-            </button>
-          </div>
-        </div>
-        <div class="card mt-4 rounded-3 p-4 border-0">
-          <div class="d-flex gap-3 align-items-center">
-            <img src="./assets//nova.svg" alt="nova" />
-            <h6 class="text-primary">Nova Agritech Ltd.</h6>
-          </div>
-
-          <div class="mt-5 d-flex gap-5">
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
-              <h4 class="fs-xs">Rs 39 - 41</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
-              <h4 class="fs-xs">2024-01-22</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
-              <h4 class="fs-xs">2024-01-24</h4>
-            </div>
-          </div>
-
-          <div class="my-4 d-flex gap-5">
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
-              <h4 class="fs-xs">Rs 39 - 41</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
-              <h4 class="fs-xs">2024-01-22</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
-              <h4 class="fs-xs">2024-01-24</h4>
-            </div>
-          </div>
-          <div class="d-flex gap-2">
-            <button
-              class="btn btn-transparent rounded-3 px-4 border border-primary text-primary"
-              type="submit"
-            >
-              RHP
-            </button>
-            <button class="btn bg-red text-white rounded-3 px-4" type="submit">
+            <button class="btn bg-red text-white rounded-4 px-4" type="submit">
               DHRP
             </button>
           </div>
         </div>
 
         <div class="card mt-4 rounded-3 p-4 border-0">
-          <div class="d-flex gap-3 align-items-center">
+          <div class="card-heading d-flex gap-4 align-items-center">
             <img src="./assets//nova.svg" alt="nova" />
             <h6 class="text-primary">Nova Agritech Ltd.</h6>
           </div>
 
-          <div class="mt-5 d-flex gap-5">
+          <div class="mt-5 d-flex justify-content-between gap-3 flex-wrap px-1">
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
+              <h4 class="fs-xs">Rs 39 - 41</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
+              <h4 class="fs-xs">2024-01-22</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
+              <h4 class="fs-xs">2024-01-24</h4>
+            </div>
             <div class="flex">
               <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
               <h4 class="fs-xs">Rs 39 - 41</h4>
@@ -243,40 +173,38 @@
             </div>
           </div>
 
-          <div class="my-4 d-flex gap-5">
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
-              <h4 class="fs-xs">Rs 39 - 41</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
-              <h4 class="fs-xs">2024-01-22</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
-              <h4 class="fs-xs">2024-01-24</h4>
-            </div>
-          </div>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2 mt-3">
             <button
-              class="btn btn-transparent rounded-3 px-4 border border-primary text-primary"
+              class="btn btn-transparent rounded-4 px-4 border border-primary text-primary"
               type="submit"
             >
               RHP
             </button>
-            <button class="btn bg-red text-white rounded-3 px-4" type="submit">
+            <button class="btn bg-red text-white rounded-4 px-4" type="submit">
               DHRP
             </button>
           </div>
         </div>
 
         <div class="card mt-4 rounded-3 p-4 border-0">
-          <div class="d-flex gap-3 align-items-center">
+          <div class="card-heading d-flex gap-4 align-items-center">
             <img src="./assets//nova.svg" alt="nova" />
             <h6 class="text-primary">Nova Agritech Ltd.</h6>
           </div>
 
-          <div class="mt-5 d-flex gap-5">
+          <div class="mt-5 d-flex justify-content-between gap-3 flex-wrap px-1">
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
+              <h4 class="fs-xs">Rs 39 - 41</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
+              <h4 class="fs-xs">2024-01-22</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
+              <h4 class="fs-xs">2024-01-24</h4>
+            </div>
             <div class="flex">
               <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
               <h4 class="fs-xs">Rs 39 - 41</h4>
@@ -291,40 +219,38 @@
             </div>
           </div>
 
-          <div class="my-4 d-flex gap-5">
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
-              <h4 class="fs-xs">Rs 39 - 41</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
-              <h4 class="fs-xs">2024-01-22</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
-              <h4 class="fs-xs">2024-01-24</h4>
-            </div>
-          </div>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2 mt-3">
             <button
-              class="btn btn-transparent rounded-3 px-4 border border-primary text-primary"
+              class="btn btn-transparent rounded-4 px-4 border border-primary text-primary"
               type="submit"
             >
               RHP
             </button>
-            <button class="btn bg-red text-white rounded-3 px-4" type="submit">
+            <button class="btn bg-red text-white rounded-4 px-4" type="submit">
               DHRP
             </button>
           </div>
         </div>
 
         <div class="card mt-4 rounded-3 p-4 border-0">
-          <div class="d-flex gap-3 align-items-center">
+          <div class="card-heading d-flex gap-4 align-items-center">
             <img src="./assets//nova.svg" alt="nova" />
             <h6 class="text-primary">Nova Agritech Ltd.</h6>
           </div>
 
-          <div class="mt-5 d-flex gap-5">
+          <div class="mt-5 d-flex justify-content-between gap-3 flex-wrap px-1">
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
+              <h4 class="fs-xs">Rs 39 - 41</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
+              <h4 class="fs-xs">2024-01-22</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
+              <h4 class="fs-xs">2024-01-24</h4>
+            </div>
             <div class="flex">
               <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
               <h4 class="fs-xs">Rs 39 - 41</h4>
@@ -339,40 +265,38 @@
             </div>
           </div>
 
-          <div class="my-4 d-flex gap-5">
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
-              <h4 class="fs-xs">Rs 39 - 41</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
-              <h4 class="fs-xs">2024-01-22</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
-              <h4 class="fs-xs">2024-01-24</h4>
-            </div>
-          </div>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2 mt-3">
             <button
-              class="btn btn-transparent rounded-3 px-4 border border-primary text-primary"
+              class="btn btn-transparent rounded-4 px-4 border border-primary text-primary"
               type="submit"
             >
               RHP
             </button>
-            <button class="btn bg-red text-white rounded-3 px-4" type="submit">
+            <button class="btn bg-red text-white rounded-4 px-4" type="submit">
               DHRP
             </button>
           </div>
         </div>
 
         <div class="card mt-4 rounded-3 p-4 border-0">
-          <div class="d-flex gap-3 align-items-center">
+          <div class="card-heading d-flex gap-4 align-items-center">
             <img src="./assets//nova.svg" alt="nova" />
             <h6 class="text-primary">Nova Agritech Ltd.</h6>
           </div>
 
-          <div class="mt-5 d-flex gap-5">
+          <div class="mt-5 d-flex justify-content-between gap-3 flex-wrap px-1">
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
+              <h4 class="fs-xs">Rs 39 - 41</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
+              <h4 class="fs-xs">2024-01-22</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
+              <h4 class="fs-xs">2024-01-24</h4>
+            </div>
             <div class="flex">
               <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
               <h4 class="fs-xs">Rs 39 - 41</h4>
@@ -387,40 +311,38 @@
             </div>
           </div>
 
-          <div class="my-4 d-flex gap-5">
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
-              <h4 class="fs-xs">Rs 39 - 41</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
-              <h4 class="fs-xs">2024-01-22</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
-              <h4 class="fs-xs">2024-01-24</h4>
-            </div>
-          </div>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2 mt-3">
             <button
-              class="btn btn-transparent rounded-3 px-4 border border-primary text-primary"
+              class="btn btn-transparent rounded-4 px-4 border border-primary text-primary"
               type="submit"
             >
               RHP
             </button>
-            <button class="btn bg-red text-white rounded-3 px-4" type="submit">
+            <button class="btn bg-red text-white rounded-4 px-4" type="submit">
               DHRP
             </button>
           </div>
         </div>
 
         <div class="card mt-4 rounded-3 p-4 border-0">
-          <div class="d-flex gap-3 align-items-center">
+          <div class="card-heading d-flex gap-4 align-items-center">
             <img src="./assets//nova.svg" alt="nova" />
             <h6 class="text-primary">Nova Agritech Ltd.</h6>
           </div>
 
-          <div class="mt-5 d-flex gap-5">
+          <div class="mt-5 d-flex justify-content-between gap-3 flex-wrap px-1">
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
+              <h4 class="fs-xs">Rs 39 - 41</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
+              <h4 class="fs-xs">2024-01-22</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
+              <h4 class="fs-xs">2024-01-24</h4>
+            </div>
             <div class="flex">
               <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
               <h4 class="fs-xs">Rs 39 - 41</h4>
@@ -435,40 +357,38 @@
             </div>
           </div>
 
-          <div class="my-4 d-flex gap-5">
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
-              <h4 class="fs-xs">Rs 39 - 41</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
-              <h4 class="fs-xs">2024-01-22</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
-              <h4 class="fs-xs">2024-01-24</h4>
-            </div>
-          </div>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2 mt-3">
             <button
-              class="btn btn-transparent rounded-3 px-4 border border-primary text-primary"
+              class="btn btn-transparent rounded-4 px-4 border border-primary text-primary"
               type="submit"
             >
               RHP
             </button>
-            <button class="btn bg-red text-white rounded-3 px-4" type="submit">
+            <button class="btn bg-red text-white rounded-4 px-4" type="submit">
               DHRP
             </button>
           </div>
         </div>
 
         <div class="card mt-4 rounded-3 p-4 border-0">
-          <div class="d-flex gap-3 align-items-center">
+          <div class="card-heading d-flex gap-4 align-items-center">
             <img src="./assets//nova.svg" alt="nova" />
             <h6 class="text-primary">Nova Agritech Ltd.</h6>
           </div>
 
-          <div class="mt-5 d-flex gap-5">
+          <div class="mt-5 d-flex justify-content-between gap-3 flex-wrap px-1">
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
+              <h4 class="fs-xs">Rs 39 - 41</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
+              <h4 class="fs-xs">2024-01-22</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
+              <h4 class="fs-xs">2024-01-24</h4>
+            </div>
             <div class="flex">
               <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
               <h4 class="fs-xs">Rs 39 - 41</h4>
@@ -483,40 +403,38 @@
             </div>
           </div>
 
-          <div class="my-4 d-flex gap-5">
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
-              <h4 class="fs-xs">Rs 39 - 41</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
-              <h4 class="fs-xs">2024-01-22</h4>
-            </div>
-            <div class="flex">
-              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
-              <h4 class="fs-xs">2024-01-24</h4>
-            </div>
-          </div>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2 mt-3">
             <button
-              class="btn btn-transparent rounded-3 px-4 border border-primary text-primary"
+              class="btn btn-transparent rounded-4 px-4 border border-primary text-primary"
               type="submit"
             >
               RHP
             </button>
-            <button class="btn bg-red text-white rounded-3 px-4" type="submit">
+            <button class="btn bg-red text-white rounded-4 px-4" type="submit">
               DHRP
             </button>
           </div>
         </div>
 
         <div class="card mt-4 rounded-3 p-4 border-0">
-          <div class="d-flex gap-3 align-items-center">
+          <div class="card-heading d-flex gap-4 align-items-center">
             <img src="./assets//nova.svg" alt="nova" />
             <h6 class="text-primary">Nova Agritech Ltd.</h6>
           </div>
 
-          <div class="mt-5 d-flex gap-5">
+          <div class="mt-5 d-flex justify-content-between gap-3 flex-wrap px-1">
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
+              <h4 class="fs-xs">Rs 39 - 41</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
+              <h4 class="fs-xs">2024-01-22</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
+              <h4 class="fs-xs">2024-01-24</h4>
+            </div>
             <div class="flex">
               <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
               <h4 class="fs-xs">Rs 39 - 41</h4>
@@ -531,7 +449,38 @@
             </div>
           </div>
 
-          <div class="my-4 d-flex gap-5">
+          <div class="d-flex gap-2 mt-3">
+            <button
+              class="btn btn-transparent rounded-4 px-4 border border-primary text-primary"
+              type="submit"
+            >
+              RHP
+            </button>
+            <button class="btn bg-red text-white rounded-4 px-4" type="submit">
+              DHRP
+            </button>
+          </div>
+        </div>
+
+        <div class="card mt-4 rounded-3 p-4 border-0">
+          <div class="card-heading d-flex gap-4 align-items-center">
+            <img src="./assets//nova.svg" alt="nova" />
+            <h6 class="text-primary">Nova Agritech Ltd.</h6>
+          </div>
+
+          <div class="mt-5 d-flex justify-content-between gap-3 flex-wrap px-1">
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
+              <h4 class="fs-xs">Rs 39 - 41</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">OPEN</h6>
+              <h4 class="fs-xs">2024-01-22</h4>
+            </div>
+            <div class="flex">
+              <h6 class="fw-normal text-grey fs-6">CLOSE</h6>
+              <h4 class="fs-xs">2024-01-24</h4>
+            </div>
             <div class="flex">
               <h6 class="fw-normal text-grey fs-6">PRICE BAND</h6>
               <h4 class="fs-xs">Rs 39 - 41</h4>
@@ -545,20 +494,94 @@
               <h4 class="fs-xs">2024-01-24</h4>
             </div>
           </div>
-          <div class="d-flex gap-2">
+
+          <div class="d-flex gap-2 mt-3">
             <button
-              class="btn btn-transparent rounded-3 px-4 border border-primary text-primary"
+              class="btn btn-transparent rounded-4 px-4 border border-primary text-primary"
               type="submit"
             >
               RHP
             </button>
-            <button class="btn bg-red text-white rounded-3 px-4" type="submit">
+            <button class="btn bg-red text-white rounded-4 px-4" type="submit">
               DHRP
             </button>
           </div>
         </div>
       </div>
+      <!-- cards area ends -->
       <!-- Upcoming IPO section ends -->
+
+      <!--FAQ Section starts-->
+      <div class="my-5">
+        <h1 class="fs-2">Frequently Asked Questions</h1>
+        <h6 class="fw-light fs-xs">
+          Find answers to common questions that come in your mind related to
+          IPO.
+        </h6>
+      </div>
+
+      <div class="accordion mt-4">
+        <div class="accordion-item bg-white mt-3 pt-2 pb-4 px-2 border-0">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button faq-button fw-x"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              How to Subscribe to an IPO?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+          >
+            <div class="accordion-body fw-normal">
+              Step 1: Login to your respective service provider. <br />
+              Step 2: Click on the IPO button. <br />
+              Step 3: Select the IPO you want to bid and enter the relevant
+              details. <br />
+              Step4: Your subscription will be completed once you make the
+              payment or give permission.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-white mt-3 pt-2 pb-4 border-0">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed faq-button fw-x"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              How to invest in an IPO?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Bootstrap Bundle with Popper -->

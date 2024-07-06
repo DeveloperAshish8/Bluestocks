@@ -32,10 +32,10 @@ section {
   content: ">";
   font-family: "FontAwesome";
 }
-
+/* 
 .cards {
   flex-wrap: wrap;
-}
+} */
 
 .card {
   width: 420px;
@@ -44,4 +44,19 @@ section {
 
 .bg-red {
   background-color: #f05537;
+}
+
+.accordion-item {
+  border-radius: 15px !important;
+}
+
+.faq-button {
+  background-color: white !important;
+  color: black !important;
+}
+
+@media screen and (max-width: 600px) {
+  .card-heading {
+    flex-direction: column;
+  }
 }
