@@ -50,6 +50,14 @@ section {
   border-radius: 15px !important;
 }
 
+.accordion-button::after {
+  background-image: url("./assets/plus.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("./assets/minus.svg");
+}
+
 .faq-button {
   background-color: white !important;
   color: black !important;
